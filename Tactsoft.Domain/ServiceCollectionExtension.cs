@@ -31,12 +31,6 @@ public static class ServiceCollectionExtension
 
         services.AddScoped<MailService, MailService>();
         services.AddScoped<IFileStorageService, FileStorageService>();
-        services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
-        {
-            options.ExpireTimeSpan = TimeSpan.Zero;
-            options.SlidingExpiration = false;
-        });
-        services.AddSession();
 
         return services;
     }

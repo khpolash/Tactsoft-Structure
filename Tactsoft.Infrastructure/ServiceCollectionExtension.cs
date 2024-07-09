@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
@@ -37,7 +38,13 @@ public static class ServiceCollectionExtension
         }).AddEntityFrameworkStores<TactsoftDbContext>().AddDefaultTokenProviders();
 
 
-        services.AddMvc(config => config.Filters.Add(new AuthorizeFilter()));
+        //services.AddMvc(config => config.Filters.Add(new AuthorizeFilter()));
+        //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+        //{
+        //    options.ExpireTimeSpan = TimeSpan.Zero;
+        //    options.SlidingExpiration = false;
+        //});
+        //services.AddSession();
 
         return services;
     }
