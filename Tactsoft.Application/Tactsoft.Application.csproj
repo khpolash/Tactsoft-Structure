@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tactsoft.Infrastructure\Tactsoft.Infrastructure.csproj" />
+    <ProjectReference Include="..\Tactsoft.SharedKernel\Tactsoft.SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\Entities\" />
+    <Folder Include="Repositories\Entities\" />
+    <Folder Include="ViewModels\VmEntities\" />
+  </ItemGroup>
+
+</Project>

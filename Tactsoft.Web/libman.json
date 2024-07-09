@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "admin-lte@3.2.0",
+      "destination": "wwwroot/lib/admin-lte/",
+      "files": [
+        "js/pages/dashboard.js",
+        "css/alt/adminlte.components.css",
+        "css/alt/adminlte.components.css.map",
+        "css/alt/adminlte.components.min.css",
+        "css/alt/adminlte.components.min.css.map",
+        "css/alt/adminlte.core.css",
+        "css/alt/adminlte.core.css.map",
+        "css/alt/adminlte.core.min.css",
+        "css/alt/adminlte.core.min.css.map",
+        "css/alt/adminlte.extra-components.css",
+        "css/alt/adminlte.extra-components.css.map",
+        "css/alt/adminlte.extra-components.min.css",
+        "css/alt/adminlte.extra-components.min.css.map",
+        "css/alt/adminlte.light.css",
+        "css/alt/adminlte.light.css.map",
+        "css/alt/adminlte.light.min.css",
+        "css/alt/adminlte.light.min.css.map",
+        "css/alt/adminlte.pages.css",
+        "css/alt/adminlte.pages.css.map",
+        "css/alt/adminlte.pages.min.css",
+        "css/alt/adminlte.pages.min.css.map",
+        "css/alt/adminlte.plugins.css",
+        "css/alt/adminlte.plugins.css.map",
+        "css/alt/adminlte.plugins.min.css",
+        "css/alt/adminlte.plugins.min.css.map",
+        "css/adminlte.css",
+        "css/adminlte.css.map",
+        "css/adminlte.min.css",
+        "css/adminlte.min.css.map",
+        "js/adminlte.js",
+        "js/pages/dashboard3.min.js",
+        "js/pages/dashboard3.js",
+        "js/pages/dashboard2.min.js",
+        "js/pages/dashboard2.js",
+        "js/pages/dashboard.min.js",
+        "js/adminlte.js.map",
+        "js/adminlte.min.js",
+        "js/adminlte.min.js.map",
+        "js/demo.js",
+        "js/demo.min.js"
+      ]
+    },
+    {
+      "library": "font-awesome@6.5.2",
+      "destination": "wwwroot/lib/font-awesome/",
+      "files": [
+        "css/all.min.css",
+        "js/all.min.js",
+        "webfonts/fa-v4compatibility.woff2",
+        "webfonts/fa-v4compatibility.ttf",
+        "webfonts/fa-solid-900.woff2",
+        "webfonts/fa-solid-900.ttf",
+        "webfonts/fa-regular-400.woff2",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-brands-400.woff2",
+        "webfonts/fa-brands-400.ttf"
+      ]
+    },
+    {
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "js/bootstrap.bundle.js",
+        "js/bootstrap.bundle.js.map",
+        "css/bootstrap-grid.css",
+        "css/bootstrap-grid.css.map",
+        "css/bootstrap-grid.min.css",
+        "css/bootstrap-grid.min.css.map",
+        "css/bootstrap-grid.rtl.css",
+        "css/bootstrap-grid.rtl.css.map",
+        "css/bootstrap-grid.rtl.min.css",
+        "css/bootstrap-grid.rtl.min.css.map",
+        "css/bootstrap-reboot.css",
+        "css/bootstrap-reboot.css.map",
+        "css/bootstrap-reboot.min.css",
+        "css/bootstrap-reboot.min.css.map",
+        "css/bootstrap-reboot.rtl.css",
+        "css/bootstrap-reboot.rtl.css.map",
+        "css/bootstrap-reboot.rtl.min.css",
+        "css/bootstrap-reboot.rtl.min.css.map",
+        "css/bootstrap-utilities.css",
+        "css/bootstrap-utilities.css.map",
+        "css/bootstrap-utilities.min.css",
+        "css/bootstrap-utilities.min.css.map",
+        "css/bootstrap-utilities.rtl.css",
+        "css/bootstrap-utilities.rtl.css.map",
+        "css/bootstrap-utilities.rtl.min.css",
+        "css/bootstrap-utilities.rtl.min.css.map",
+        "css/bootstrap.css",
+        "css/bootstrap.css.map",
+        "css/bootstrap.min.css",
+        "css/bootstrap.min.css.map",
+        "css/bootstrap.rtl.css",
+        "css/bootstrap.rtl.css.map",
+        "css/bootstrap.rtl.min.css",
+        "css/bootstrap.rtl.min.css.map",
+        "js/bootstrap.bundle.min.js",
+        "js/bootstrap.bundle.min.js.map",
+        "js/bootstrap.esm.js",
+        "js/bootstrap.esm.js.map",
+        "js/bootstrap.esm.min.js",
+        "js/bootstrap.esm.min.js.map",
+        "js/bootstrap.js",
+        "js/bootstrap.js.map",
+        "js/bootstrap.min.js",
+        "js/bootstrap.min.js.map"
+      ]
+    },
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "jquery.min.js",
+        "jquery.slim.js"
+      ]
+    },
+    {
+      "library": "tempusdominus-bootstrap-4@5.39.0",
+      "destination": "wwwroot/lib/tempusdominus-bootstrap-4/"
+    },
+    {
+      "library": "icheck-bootstrap@3.0.1",
+      "destination": "wwwroot/lib/icheck-bootstrap/"
+    },
+    {
+      "library": "bootstrap-daterangepicker@3.0.5",
+      "destination": "wwwroot/lib/bootstrap-daterangepicker/"
+    },
+    {
+      "library": "summernote@0.8.20",
+      "destination": "wwwroot/lib/summernote/"
+    },
+    {
+      "library": "jqueryui@1.13.3",
+      "destination": "wwwroot/lib/jqueryui/"
+    },
+    {
+      "library": "jquery-sparklines@2.1.2",
+      "destination": "wwwroot/lib/jquery-sparklines/",
+      "files": [
+        "jquery.sparkline.min.js"
+      ]
+    },
+    {
+      "library": "jQuery-Knob@1.2.13",
+      "destination": "wwwroot/lib/jQuery-Knob/",
+      "files": [
+        "jquery.knob.min.js"
+      ]
+    },
+    {
+      "library": "jqvmap@1.5.1",
+      "destination": "wwwroot/lib/jqvmap/",
+      "files": [
+        "jqvmap.min.css"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "Chart.js@2.9.4",
+      "destination": "wwwroot/lib/Chart.js/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "overlayscrollbars@1.12.0",
+      "destination": "wwwroot/lib/overlayscrollbars/"
+    }
+  ]
+}

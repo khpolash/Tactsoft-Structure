@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewData["Title"] - Tactsoft.Web</title>
+    <partial name="Partial/_Styles" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed" style="overflow-x:hidden;">
+    <div class="wrapper" style="font-size:14px;">
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="~/images/adminlte/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        </div>
+        <partial name="Partial/_Navbar" />
+
+        <partial name="Partial/_Sidebar" />
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+
+        <footer class="main-footer">
+            <strong>Copyright &copy; @DateTime.Now.Year <a href="https://www.tactsoftltd.com/" target="_blank">Tactsoft Ltd</a>.</strong>
+            All rights reserved.
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Version</b> 3.2.0
+            </div>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+
+    <partial name="Partial/_Scripts" />
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
