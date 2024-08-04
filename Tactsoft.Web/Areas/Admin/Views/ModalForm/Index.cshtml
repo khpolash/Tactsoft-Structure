@@ -1,0 +1,161 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Medicine Entry Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Medicine Entry Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<!-- Enroll Medicine Table Start -->
+<div class="container-fluid">
+    <div class="card p-4">
+        <div class="table-responsive">
+            <table id="medicineEnrollTable" class="table table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Generic Name</th>
+                        <th>Category</th>
+                        <th class="text-center">
+                            <button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#medicineAdd" id="addBtn">
+                                <i class="bi bi-plus text-primary h4"></i>
+                            </button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elidel Cream</td>
+                        <td>Pimecrolimus 1%</td>
+                        <td>ointment</td>
+                        <td class="text-center">
+                            <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#medicineEdit">
+                                <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="delete bg-danger border-0 rounded">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Generic Ultravate (Cream, ointment)-+</td>
+                        <td>Halobetasol propionate 0.05%</td>
+                        <td>ointment</td>
+                        <td class="text-center">
+                            <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#medicineEdit">
+                                <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="delete bg-danger border-0 rounded">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Napa+</td>
+                        <td>Paracetamol</td>
+                        <td>Tab</td>
+                        <td class="text-center">
+                            <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#medicineEdit">
+                                <i class="bi bi-pencil-fill"></i>
+                            </button>
+                            <button class="delete bg-danger border-0 rounded">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Generic Name</th>
+                        <th>Category</th>
+                        <th class="text-center">Add New</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Enroll Medicine Table End -->
+
+<!-- Medicine Add Modal Start -->
+<div class="modal fade" id="medicineAdd" tabindex="-1" aria-labelledby="medicineAdd" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="medicineAdd">Add New Medicine</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Medicine Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gname" class="form-label">Generic Name</label>
+                        <input type="text" class="form-control" id="gname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <input type="text" class="form-control" id="category">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mdate" class="form-label">Manufacture Date</label>
+                        <input type="date" class="form-control" id="mdate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="expdate" class="form-label">Expire Date</label>
+                        <input type="date" class="form-control" id="expdate">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Medicine Add Modal End -->
+
+<!-- Medicine Edit Modal Start -->
+<div class="modal fade" id="medicineEdit" tabindex="-1" aria-labelledby="medicineEdit" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="medicineEdit">Update Medicine</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Medicine Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gname" class="form-label">Generic Name</label>
+                        <input type="text" class="form-control" id="gname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <input type="text" class="form-control" id="category">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Medicine Edit Modal End -->

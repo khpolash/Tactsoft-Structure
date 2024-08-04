@@ -1,0 +1,134 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Multi-step Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Multi-step Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<!-- =============== Multistep Form Start =============== -->
+<div class="container-fluid">
+    <div class="card p-4">
+      <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-8 col-sm-12">
+                <form id="multiStepForm" role="form">
+                    <div class="step active" id="step1">
+                        <h3 class="mb-4 text-center">Step 1: Personal Information</h3>
+                        <div class="form-group">
+                            <label for="name">First Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="text" class="form-control" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary next-btn">Next</button>
+                    </div>
+
+                    <div class="step" id="step2">
+                        <h3 class="mb-4 text-center">Step 2: Contact Information</h3>
+                        <div class="form-group">
+                            <label for="coutry">Country</label>
+                            <input type="text" class="form-control" id="coutry" name="coutry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" class="form-control" id="state" name="state" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <button class="btn btn-primary prev-btn">Previous</button>
+                        <button class="btn btn-primary next-btn">Next</button>
+                    </div>
+
+                    <div class="step" id="step3">
+                        <h3 class="mb-4 text-center">Step 3: Login Details</h3>
+                        <div class="form-group">
+                            <label for="userName">User Name</label>
+                            <input type="text" class="form-control" id="userName" name="userName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Last Name</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="facebook">Facebook</label>
+                            <input type="text" class="form-control" id="facebook" name="facebook" required>
+                        </div>
+                        <button class="btn btn-primary prev-btn">Previous</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+      </div>
+    </div>
+</div>
+<!-- =============== Multistep Form End =============== -->
+@section Scripts{
+    <script src="~/adminlte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var currentStep = 0;
+            var steps = $('.step');
+            var totalSteps = steps.length;
+
+            function showStep(step) {
+                steps.removeClass('active');
+                $(steps[step]).addClass('active');
+            }
+
+            $('.next-btn').click(function () {
+                if (currentStep < totalSteps - 1) {
+                    currentStep++;
+                    showStep(currentStep);
+                }
+            });
+
+            $('.prev-btn').click(function () {
+                if (currentStep > 0) {
+                    currentStep--;
+                    showStep(currentStep);
+                }
+            });
+
+            $('#multiStepForm').submit(function (e) {
+                e.preventDefault();
+                // Here you can handle form submission, for example, send data to server via AJAX
+                alert('Form submitted successfully!');
+            });
+        });
+    </script>
+}

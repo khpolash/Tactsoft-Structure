@@ -1,0 +1,247 @@
+﻿.imgPreview-area {
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CFCFCF;
+    position: relative;
+}
+
+    .imgPreview-area span {
+        color: #8E8E8E;
+        font-weight: 600;
+    }
+
+    .imgPreview-area .preview-iamge {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+    }
+
+/*Employee Register*/
+#nav-tab button {
+    background-color: #F8F8F8;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: #616161;
+}
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: black;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+        border-top-color: #05A92D;
+        border-top-width: 2px;
+    }
+
+/*Multi step Form*/
+.step {
+    display: none;
+}
+
+    .step.active {
+        display: block;
+    }
+
+
+
+
+/*Table Export*/
+.dt-buttons .buttons-copy {
+    border-color: #6610f2 !important;
+    background-color: #6610f2 !important;
+    color: white !important;
+}
+
+    .dt-buttons .buttons-copy::after {
+        content: "\F3C2";
+        font-family: "Bootstrap-icons";
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dt-buttons .buttons-copy:hover {
+        border-color: #6610f2 !important;
+        background-color: white !important;
+        color: #6610f2 !important;
+    }
+
+.dt-buttons .buttons-csv {
+    border-color: #dc3545 !important;
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+    .dt-buttons .buttons-csv::after {
+        content: "\F743";
+        font-family: "Bootstrap-icons";
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dt-buttons .buttons-csv:hover {
+        border-color: #dc3545 !important;
+        background-color: white !important;
+        color: #dc3545 !important;
+    }
+
+.dt-buttons .buttons-excel {
+    border-color: #fd7e14 !important;
+    background-color: #fd7e14 !important;
+    color: white !important;
+}
+
+    .dt-buttons .buttons-excel::after {
+        content: "\F368";
+        font-family: "Bootstrap-icons";
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dt-buttons .buttons-excel:hover {
+        border-color: #fd7e14 !important;
+        background-color: white !important;
+        color: #fd7e14 !important;
+    }
+
+.dt-buttons .buttons-pdf {
+    border-color: #198754 !important;
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+    .dt-buttons .buttons-pdf::after {
+        content: "\F63E";
+        font-family: "Bootstrap-icons";
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dt-buttons .buttons-pdf:hover {
+        border-color: #198754 !important;
+        background-color: white !important;
+        color: #198754 !important;
+    }
+
+.dt-buttons .buttons-print {
+    border-color: #0dcaf0 !important;
+    background-color: #0dcaf0 !important;
+    color: white !important;
+}
+
+    .dt-buttons .buttons-print::after {
+        content: "\F501";
+        font-family: "Bootstrap-icons";
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .dt-buttons .buttons-print:hover {
+        border-color: #0dcaf0 !important;
+        background-color: white !important;
+        color: #0dcaf0 !important;
+    }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: transparent !important;
+}
+
+/*Login Form Start*/
+.login {
+    padding: 30px;
+}
+
+    .login .login-form .img {
+        float: right;
+    }
+
+    .login .login-form {
+        margin-top: 15px;
+    }
+
+        .login .login-form h1 {
+            margin-top: 25px;
+            font-weight: bold;
+        }
+
+        .login .login-form .login-form-section {
+            margin-top: 25px;
+        }
+
+            .login .login-form .login-form-section .userName {
+                border-bottom: 1px solid;
+                width: 75%;
+                margin-bottom: 20px;
+            }
+
+                .login .login-form .login-form-section .userName input {
+                    width: 90%;
+                    border: none;
+                    padding: 10px;
+                }
+
+                    .login .login-form .login-form-section .userName input:focus {
+                        outline: none;
+                    }
+
+            .login .login-form .login-form-section .password {
+                border-bottom: 1px solid;
+                width: 75%;
+                margin-bottom: 25px;
+            }
+
+                .login .login-form .login-form-section .password input {
+                    width: 90%;
+                    border: none;
+                    padding: 10px;
+                }
+
+                    .login .login-form .login-form-section .password input:focus {
+                        outline: none;
+                    }
+
+            .login .login-form .login-form-section .loginBtn #btnSubmit {
+                margin-top: 30px;
+                padding: 12px 30px 12px 30px;
+                border: none;
+                margin-bottom: 20px;
+            }
+
+        .login .login-form .create-account {
+            float: right;
+            padding-right: 40px;
+            margin-bottom: 15px;
+        }
+
+        .login .login-form .loginWith-icon span {
+            padding-right: 10px;
+        }
+
+            .login .login-form .loginWith-icon span .facebook {
+                background-color: #044C80;
+                padding: 7px 10px 7px 10px;
+                border-radius: 4px;
+                color: white;
+            }
+
+            .login .login-form .loginWith-icon span .twitter {
+                background-color: #13B2C5;
+                padding: 7px 10px 7px 10px;
+                border-radius: 4px;
+                color: white;
+            }
+
+            .login .login-form .loginWith-icon span .google {
+                background-color: #C9142F;
+                padding: 7px 10px 7px 10px;
+                border-radius: 4px;
+                color: white;
+            }
+/*Login Form End*/

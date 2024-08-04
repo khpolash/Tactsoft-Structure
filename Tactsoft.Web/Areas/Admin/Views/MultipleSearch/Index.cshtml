@@ -1,0 +1,294 @@
+﻿ <!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Multiple Search Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Multiple Search Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+
+<div class="container-fluid">
+    <div class="card p-3">
+        <div class="mb-4 d-flex justify-content-between">
+            <div>
+                <h5 class="text-uppercase">List</h5>
+            </div>
+            <div>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-plus"></i>
+                    Create New
+                </button>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <form>
+                <div class="row g-3">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">Demand No</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">From</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">To</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">Vehicle</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label">Spare Parts</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-end align-items-end">
+                        <div class="mb-2">
+                            <button class="btn btn-success d-block" type="submit">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="mt-5">
+                <div class="table-responsive">
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Demand No</th>
+                                <th>Vehicle</th>
+                                <th>Spare Parts</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Total Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>17</td>
+                                <td>66.77.99.00</td>
+                                <td>Ka-9834545</td>
+                                <td>235/80R-16</td>
+                                <td>1</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>
+                                    <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#editModal">
+                                        <i class="bi bi-pencil-fill"></i>
+                                        Edit
+                                    </button>
+                                    <button class="delete bg-danger border-0 rounded">
+                                        <i class="bi bi-trash-fill"></i>
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>44.02.6300.159.07.712.18</td>
+                                <td>Kha-9834545</td>
+                                <td>235/80R-16</td>
+                                <td>11</td>
+                                <td>1</td>
+                                <td>11</td>
+                                <td>
+                                    <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#editModal">
+                                        <i class="bi bi-pencil-fill"></i>
+                                        Edit
+                                    </button>
+                                    <button class="delete bg-danger border-0 rounded" data-bs-toggle="modal" data-bs-target="#editModal">
+                                        <i class="bi bi-trash-fill"></i>
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>44.02.4450.140.07.003.19.56/1</td>
+                                <td>বান্দরবান-ঘ-১১-০০২৯</td>
+                                <td>205-R-16</td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>5</td>
+                                <td>
+                                    <button class="edit bg-primary border-0 rounded">
+                                        <i class="bi bi-pencil-fill"></i>
+                                        Edit
+                                    </button>
+                                    <button class="delete bg-danger border-0 rounded">
+                                        <i class="bi bi-trash-fill"></i>
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Id</th>
+                                <th>Demand No</th>
+                                <th>Vehicle</th>
+                                <th>Spare Parts</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Total Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Create Product Modal Start-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+            <div class="modal-body">
+                    <div class="row g-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="demandNo" class="form-label">Demand No</label>
+                                <input type="text" class="form-control" id="demandNo">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="fromDate" class="form-label">From</label>
+                                <input type="date" class="form-control" id="fromDate">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="toDate" class="form-label">To</label>
+                                <input type="date" class="form-control" id="toDate">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="exampleFormControlInput1" class="form-label">Vehicle</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="exampleFormControlInput2" class="form-label">Spare Parts</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add New</button>
+            </div>  
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--Edit Modal Start-->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="editModalLabel">Add</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+            <div class="modal-body">
+                    <div class="row g-2">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="exampleFormControlInput1" class="form-label">Demand No</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="vehicle" class="form-label">Vehicle</label>
+                                <input type="text" class="form-control" id="vehicle">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="spareParts" class="form-label">Spare Parts</label>
+                                <input type="text" class="form-control" id="spareParts">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="text" class="form-control" id="quantity">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="unitPrice" class="form-label">Unit Price</label>
+                                <input type="text" class="form-control" id="unitPrice">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="mb-2">
+                                <label for="totalPrice" class="form-label">Total Price</label>
+                                <input type="text" class="form-control" id="totalPrice">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add New</button>
+            </div> 
+            </form>
+        </div>
+    </div>
+</div>
+<!--Modal End-->

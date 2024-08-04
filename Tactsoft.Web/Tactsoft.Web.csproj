@@ -7,7 +7,20 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+	  <Compile Remove="Areas\Admin\Data\**" />
+	  <Compile Remove="Areas\Admin\Models\**" />
+	  <Content Remove="Areas\Admin\Data\**" />
+	  <Content Remove="Areas\Admin\Models\**" />
+	  <EmbeddedResource Remove="Areas\Admin\Data\**" />
+	  <EmbeddedResource Remove="Areas\Admin\Models\**" />
+	  <None Remove="Areas\Admin\Data\**" />
+	  <None Remove="Areas\Admin\Models\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -15,11 +28,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Areas\Admin\Data\" />
-		<Folder Include="Areas\Admin\Models\" />
-	</ItemGroup>
-
-	<ItemGroup>
+		<None Include="Areas\Admin\Views\CascadingSearch\Index.cshtml" />
+		<None Include="Areas\Admin\Views\EntryForm\Index.cshtml" />
+		<None Include="Areas\Admin\Views\Home\Index.cshtml" />
+		<None Include="Areas\Admin\Views\Home\Privacy.cshtml" />
+		<None Include="Areas\Admin\Views\MasterDetails\Index.cshtml" />
+		<None Include="Areas\Admin\Views\ModalForm\Index.cshtml" />
+		<None Include="Areas\Admin\Views\MultiImageUploader\Index.cshtml" />
+		<None Include="Areas\Admin\Views\MultipleSearch\Index.cshtml" />
+		<None Include="Areas\Admin\Views\MultipleWizard\Index.cshtml" />
+		<None Include="Areas\Admin\Views\RangeSearch\Index.cshtml" />
+		<None Include="Areas\Admin\Views\Registration\Index.cshtml" />
+		<None Include="Areas\Admin\Views\Registration\Login.cshtml" />
+		<None Include="Areas\Admin\Views\SendEmail\Index.cshtml" />
+		<None Include="Areas\Admin\Views\TabControl\Index.cshtml" />
+		<None Include="Areas\Admin\Views\TableExport\Index.cshtml" />
 		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
 		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
 		<None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />

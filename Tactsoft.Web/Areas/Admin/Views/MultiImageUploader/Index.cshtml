@@ -1,0 +1,96 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Multiple Image Upload Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Multiple Image Upload Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<!-- Multiple Image Upload Form Start -->
+<div class="container-fluid">
+    <div class="card p-4">
+        <form id="imageForm">
+            <div class="form-group">
+                <label for="imageUpload">Select Pictures</label>
+                <input type="file" class="form-control-file" id="imageUpload" multiple>
+            </div>
+            <div class="row" id="imagePreview"></div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="featuredProduct">
+                <label class="form-check-label" for="featuredProduct">Featured Product</label>
+            </div>
+            <hr />
+            <button type="submit" class="btn btn-success"><i class="bi bi-plus"></i> Save</button>
+            <button type="button" class="btn btn-secondary" id="cancelButton"><i class="bi bi-chevron-double-left"></i> Cancel</button>
+        </form>
+    </div>
+</div>
+<!-- Multiple Image Upload Form End -->
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            let selectedFiles = [];
+
+            function readURL(file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imgHtml = `
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img src="${e.target.result}" class="card-img-top" alt="Selected Image">
+                                                        <div class="card-body">
+                                                                 <div class="form-check pt-3 pb-3 mt-2 mb-3 border-top border-bottom">
+                                                                        <input class="form-check-input" type="radio" name="thumbnail" value="${e.target.result}">
+                                                                        <label class="form-check-label">Set Thumbnail Image</label>
+                                                                    </div>
+                                                                    <button type="button" class="btn btn-danger remove-picture" data-file-name="${file.name}"><i class="bi bi-x"></i> Remove Picture</button>
+                                                        </div>
+                                                    </div>
+                                                </div>`;
+                    $('#imagePreview').append(imgHtml);
+                };
+                reader.readAsDataURL(file);
+            }
+
+            function updateFileInput() {
+                const dataTransfer = new DataTransfer();
+                selectedFiles.forEach(file => dataTransfer.items.add(file));
+                $('#imageUpload')[0].files = dataTransfer.files;
+            }
+
+            $('#imageUpload').change(function () {
+                const files = this.files;
+                for (let i = 0; i < files.length; i++) {
+                    selectedFiles.push(files[i]);
+                    readURL(files[i]);
+                }
+                updateFileInput();
+            });
+
+            $('#imagePreview').on('click', '.remove-picture', function () {
+                const fileName = $(this).data('file-name');
+                selectedFiles = selectedFiles.filter(file => file.name !== fileName);
+                $(this).closest('.col-md-4').remove();
+                updateFileInput();
+            });
+
+            $('#cancelButton').click(function () {
+                $('#imageForm')[0].reset();
+                $('#imagePreview').empty();
+                selectedFiles = [];
+                updateFileInput();
+            });
+        });
+    </script>
+}

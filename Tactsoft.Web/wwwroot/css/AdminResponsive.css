@@ -1,0 +1,55 @@
+﻿@media only screen and (max-width: 1199px) {
+    .login .login-form form .bi-chat-square-dots-fill {
+        display: none;
+    }
+}
+
+
+
+
+    @media only screen and (max-width: 768px) {
+        /*
+		Login Form Start
+	=====================================*/
+        .login .login-form .img {
+            width: 100%;
+            text-align: center;
+        }
+
+            .login .login-form .img img {
+                height: 200px;
+                width: 150px;
+                margin: auto;
+            }
+
+        .login .login-form .login-form-section .userName {
+            width: 95%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+            .login .login-form .login-form-section .userName input {
+                width: 80%;
+            }
+
+        .login .login-form .login-form-section .password {
+            width: 95%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        .login .login-form .login-form-section .password input {
+            width: 80%;
+        }
+
+        .login .login-form .create-account {
+            float: left;
+            margin-bottom: 20px;
+        }
+        /*
+		Login Form End
+	=====================================*/
+
+
+
+    }

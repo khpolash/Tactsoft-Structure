@@ -1,0 +1,225 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Purchase Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Purchase Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<!-- Purchase Form Start -->
+<div class="container-fluid">
+    <div class="card p-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="mb-3">
+                    <a href="#">
+                        <i class="bi bi-arrow-left"></i>
+                        New Purchase
+                    </a>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="mb-3 row">
+                                <label for="purchaseNo" class="col-sm-3 col-form-label">Purchase No</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="purchaseNo">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="purchaseDate" class="col-sm-3 col-form-label">Purchase Date</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="purchaseDate">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="supplier" class="col-sm-3 col-form-label">Supplier</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="supplier">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="notes" class="col-sm-3 col-form-label">Notes</label>
+                                <div class="col-sm-8">
+                                    <textarea name="note" class="form-control" id="notes" cols="30" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2 col-sm-2 col-2">
+                            <label for="category">Category</label>
+                            <input type="text" class="form-control" id="category">
+                        </div>
+                        <div class="form-group col-md-2 col-sm-2 col-2">
+                            <label for="medicine">Medicine</label>
+                            <input type="text" class="form-control" id="medicine">
+                        </div>
+                        <div class="form-group col-md-1 col-sm-2 col-2">
+                            <label for="unit">Unit</label>
+                            <input type="text" class="form-control" id="unit">
+                        </div>
+                        <div class="form-group col-md-2 col-sm-2 col-2">
+                            <label for="batchNo">Batch No</label>
+                            <input type="text" class="form-control" id="batchNo">
+                        </div>
+                        <div class="form-group col-md-1 col-sm-2 col-2">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="form-control" id="quantity">
+                        </div>
+                        <div class="form-group col-md-1 col-sm-2 col-2">
+                            <label for="amount">Amount</label>
+                            <input type="number" class="form-control" id="amount">
+                        </div>
+                        <div class="form-group col-md-1 col-sm-2 col-2">
+                            <label for="discount">Discount</label>
+                            <input type="number" class="form-control" id="discount">
+                        </div>
+                        <div class="form-group col-md-1 col-sm-2 col-2">
+                            <label for="total">Total</label>
+                            <input type="number" class="form-control" id="total">
+                        </div>
+                        <div class="form-group col-md-1 col-sm-2 col-2 d-flex align-items-end">
+                            <button type="button" class="btn btn-primary" id="addRow">+</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Medicine</th>
+                                    <th>Unit</th>
+                                    <th>Batch No</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                    <th>Discount</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="purchaseTableBody">
+                                <!-- Rows will be added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-5">
+                            <div class="mb-3 row">
+                                <label for="paymentType" class="col-sm-3 col-form-label">Payment Type</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="paymentType">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="mb-3 row">
+                                <label for="subTotal" class="col-sm-2 col-form-label">Sub Total</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="subTotal">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="fixDiscount" class="col-sm-2 col-form-label">Fix Discount</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="fixDiscount">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="grandTotal" class="col-sm-2 col-form-label">Grand Total</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="grandTotal">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="payment" class="col-sm-2 col-form-label">Payment</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="payment">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-end">
+                                <div class="mb-2">
+                                    <button class="btn btn-success d-block" type="submit">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Purchase Form End -->
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#addRow').click(function () {
+                var category = $('#category').val();
+                var medicine = $('#medicine').val();
+                var unit = $('#unit').val();
+                var batchNo = $('#batchNo').val();
+                var quantity = $('#quantity').val();
+                var amount = $('#amount').val();
+                var discount = $('#discount').val();
+                var total = $('#total').val();
+
+                var row = `<tr>
+                            <td>${category}</td>
+                            <td>${medicine}</td>
+                            <td>${unit}</td>
+                            <td>${batchNo}</td>
+                            <td>${quantity}</td>
+                            <td>${amount}</td>
+                            <td>${discount}</td>
+                            <td>${total}</td>
+                            <td>
+                                    <button type="button" class="btn btn-primary editRow"><i class="bi bi-pencil-fill"></i></button>
+                                    <button type="button" class="btn btn-danger deleteRow"><i class="bi bi-trash-fill"></i></button>
+                            </td>
+                            </tr>`;
+
+                $('#purchaseTableBody').append(row);
+
+                // Clear the input fields
+                $('#category').val('');
+                $('#medicine').val('');
+                $('#unit').val('');
+                $('#batchNo').val('');
+                $('#quantity').val('');
+                $('#amount').val('');
+                $('#discount').val('');
+                $('#total').val('');
+            });
+
+            $(document).on('click', '.deleteRow', function () {
+                $(this).closest('tr').remove();
+            });
+
+            $(document).on('click', '.editRow', function () {
+                var row = $(this).closest('tr');
+                $('#category').val(row.find('td:eq(0)').text());
+                $('#medicine').val(row.find('td:eq(1)').text());
+                $('#unit').val(row.find('td:eq(2)').text());
+                $('#batchNo').val(row.find('td:eq(3)').text());
+                $('#quantity').val(row.find('td:eq(4)').text());
+                $('#amount').val(row.find('td:eq(5)').text());
+                $('#discount').val(row.find('td:eq(6)').text());
+                $('#total').val(row.find('td:eq(7)').text());
+                row.remove();
+            });
+        });
+    </script>
+}
+

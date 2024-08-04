@@ -1,0 +1,167 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+	<div class="container-fluid">
+		<div class="row mb-2">
+			<div class="col-sm-6">
+				<h1>Range Search</h1>
+			</div>
+			<div class="col-sm-6">
+				<ol class="breadcrumb float-sm-right">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active">Range Search</li>
+				</ol>
+			</div>
+		</div>
+	</div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<!-- Range Searce Start -->
+<div class="container-fluid">
+	<div class="card p-4">
+		<form>
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="mb-3">
+							<label for="s-date" class="form-label">Start Date</label>
+							<input type="date" class="form-control" id="s-date">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="mb-3">
+							<label for="e-date" class="form-label">End Date</label>
+							<input type="date" class="form-control" id="e-date">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="mb-3">
+							<label for="from" class="form-label">From</label>
+							<input type="text" class="form-control" id="from">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="mb-3">
+							<label for="to" class="form-label">To</label>
+							<input type="text" class="form-control" id="to">
+						</div>
+					</div>
+				</div>
+				<div class="d-flex gap-0">
+					<button class="btn btn-primary rounded-0" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="bi bi-plus"></i>
+						Enrole
+					</button>
+					<button class="btn btn-success rounded-0" type="button">
+						<i class="bi bi-arrow-clockwise"></i>
+						Reload
+					</button>
+					<button class="btn btn-info text-white rounded-0" type="submit">
+						<i class="bi bi-search"></i>
+						Search
+					</button>
+				</div>
+			</div>
+		</form>
+		<div class="mt-4">
+			<div class="table-responsive">
+				<table id="example" class="table table-striped" style="width:100%">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Sagar Mahbub</td>
+							<td>md.karim@hotmail.com</td>
+							<td>+880 614646</td>
+							<td>
+								<button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<i class="bi bi-pencil-fill"></i>
+								</button>
+								<button class="delete bg-danger border-0 rounded">
+									<i class="bi bi-trash-fill"></i>
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Sagar Mahbub</td>
+							<td>md.karim@hotmail.com</td>
+							<td>+880 614646</td>
+							<td>
+								<button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<i class="bi bi-pencil-fill"></i>
+								</button>
+								<button class="delete bg-danger border-0 rounded">
+									<i class="bi bi-trash-fill"></i>
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sagar Mahbub</td>
+							<td>md.karim@hotmail.com</td>
+							<td>+880 614646</td>
+							<td>
+								<button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<i class="bi bi-pencil-fill"></i>
+								</button>
+								<button class="delete bg-danger border-0 rounded">
+									<i class="bi bi-trash-fill"></i>
+								</button>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th>Action</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Range Search End -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="exampleModalLabel">Enroll New</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="mb-3">
+					<label for="name" class="form-label">Name</label>
+					<input type="text" class="form-control" id="name">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" class="form-control" id="email">
+				</div>
+				<div class="mb-3">
+					<label for="phone" class="form-label">Phone</label>
+					<input type="text" class="form-control" id="phone">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary rounded-0">Enroll Now</button>
+			</div>
+		</div>
+	</div>
+</div>

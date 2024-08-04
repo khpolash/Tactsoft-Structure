@@ -7,8 +7,7 @@
 <aside class="main-sidebar sidebar-dark-gray elevation-1">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-        <img src="~/images/adminlte/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <img src="~/images/adminlte/logo.jpeg" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
     </a>
 
     <!-- Sidebar -->
@@ -63,6 +62,109 @@
                                 <p>Data</p>
                             </a>
                         </li>
+                    </ul>
+                </li>
+
+                <li class="nav-header">Forms</li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Forms
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="CascadingSearch" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "CascadingSearch" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>CascadingSearch</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="EntryForm" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "EntryForm" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>EntryForm</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="MultipleSearch" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "MultipleSearch" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Multiple Search</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="MasterDetails" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "MasterDetails" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Purchase Form</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="TabControl" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "TabControl" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Employee Register</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="ModalForm" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "ModalForm" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Medicine Entry</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="MultiImageUploader" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "MultiImageUploader" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Multiple Image Upload</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="RangeSearch" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "RangeSearch" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Range Search</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="Registration" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "Registration" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Registration Form</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="MultipleWizard" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "MultipleWizard" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Multi-Step Form</p>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="SendEmail" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "SendEmail" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Email Form</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="TableExport" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "TableExport" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Table Export</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-action="Index" asp-controller="Login" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "Login" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Login</p>
+                            </a>
+                        </li>
+
                     </ul>
                 </li>
 

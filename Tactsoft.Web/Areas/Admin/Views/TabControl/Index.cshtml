@@ -1,0 +1,209 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Employee Register Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Employee Register Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<!-- Employee Registration Form & Info Table Start -->
+<div class="container-fluid">
+    <div class="card p-4">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">View All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Add New</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="pt-4">
+                    <div class="table-responsive">
+                        <table id="example" class="table table-striped" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Salary</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Rabby Ahmed</td>
+                                    <td>IT Manager</td>
+                                    <td>Dhanmondi</td>
+                                    <td>80,000</td>
+                                    <td>
+                                        <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button class="delete bg-danger border-0 rounded">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shahin Ahmed</td>
+                                    <td>Accountant</td>
+                                    <td>Mirpur</td>
+                                    <td>70,000</td>
+                                    <td>
+                                        <button class="edit bg-primary border-0 rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button class="delete bg-danger border-0 rounded">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Salary</th>
+                                    <th>Action</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="pt-4">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="mb-3 row">
+                                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="position" class="col-sm-2 col-form-label">Position</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="position">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="office" class="col-sm-2 col-form-label">Office</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="office">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="salary" class="col-sm-2 col-form-label">Salary</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="salary">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="mb-3 row">
+                                    <label for="salary" class="col-sm-2 col-form-label">Image</label>
+                                    <div class="col-sm-10">
+                                        <div class="imgPreview-area mb-3" id="imgPreview">
+                                            <img src="" alt="Image Preview" class="preview-iamge">
+                                            <span class="imgPreview-defaultText">Preview Image</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input type="file" class="form-control inpFile" id="inpFile">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <button type="submit" class="btn btn-primary float-right">Add New</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Employee Registration Form & Info Table End -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="position" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="position">
+                    </div>
+                    <div class="mb-3">
+                        <label for="office" class="form-label">Office</label>
+                        <input type="text" class="form-control" id="office">
+                    </div>
+                    <div class="mb-3">
+                        <label for="salary" class="form-label">Salary</label>
+                        <input type="text" class="form-control" id="salary">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Image Preview Start -->
+@section Scripts {
+    <script>
+        const inpFile = document.getElementById("inpFile");
+        const preview_Container = document.getElementById("imgPreview");
+        const previewImage = preview_Container.querySelector(".preview-iamge");
+        const preview_DefaultText = preview_Container.querySelector(".imgPreview-defaultText");
+
+        inpFile.addEventListener("change", function () {
+            const imgFile = this.files[0];
+
+            if (imgFile) {
+                const reader = new FileReader();
+                preview_DefaultText.style.display = "none";
+                previewImage.style.display = "block";
+                reader.addEventListener("load", function () {
+                    console.log(this);
+                    previewImage.setAttribute("src", this.result);
+                });
+                reader.readAsDataURL(imgFile);
+            }
+            else {
+                preview_DefaultText.style.display = null;
+                previewImage.style.display = null;
+            }
+        });
+    </script>
+}
+<!-- Image Preview End -->
