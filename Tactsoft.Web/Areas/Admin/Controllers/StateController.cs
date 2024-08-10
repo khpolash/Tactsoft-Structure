@@ -62,8 +62,10 @@ public class StateController : Controller
     // GET: StateController/Edit/5
     public async Task<ActionResult> Edit(int id)
     {
-        var model = await _stateRepository.FirstOrDefaultAsync(id, x => x.Country);
-        return View(_mapper.Map<StateVm>(model));
+        var state = await _stateRepository.FirstOrDefaultAsync(id, x => x.Country);
+        var model = _mapper.Map<StateVm>(state);
+        model.CountryDropdown = await _countryRepository.GetDropdown(state.CountryId);
+        return View(model);
     }
 
     // POST: StateController/Edit/5

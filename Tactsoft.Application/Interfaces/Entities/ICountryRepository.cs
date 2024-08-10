@@ -6,5 +6,5 @@ namespace Tactsoft.Application.Interfaces.Entities;
 
 public interface ICountryRepository : IBaseRepository<Country>
 {
-    Task<IEnumerable<SelectListItem>> GetDropdown(int? selected = 0);
+    Task<IEnumerable<SelectListItem>> GetDropdown(long? selected = 0);
 }

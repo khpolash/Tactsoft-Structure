@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Tactsoft.Application.Interfaces.Entities;
 using Tactsoft.Application.Repositories.BaseRepo;
 using Tactsoft.Infrastructure.Persistence;
@@ -12,7 +14,7 @@ public class StateRepository : BaseRepository<State>, IStateRepository
     {
     }
 
-    public async Task<IEnumerable<SelectListItem>> GetDropdown(int? selected = 0)
+    public async Task<IEnumerable<SelectListItem>> GetDropdown(long? selected = 0)
     {
         var state = await GetAllAsync();
         return state.Select(x => new SelectListItem
@@ -21,5 +23,10 @@ public class StateRepository : BaseRepository<State>, IStateRepository
             Value = x.Id.ToString(),
             Selected = x.Id == selected
         });
+    }
+
+    public async Task<IEnumerable<State>> StatesByCountry(long countryId)
+    {
+        return await GetAll().Where(x => x.CountryId == countryId).ToListAsync();
     }
 }

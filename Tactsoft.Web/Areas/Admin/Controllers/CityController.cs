@@ -48,7 +48,7 @@ public class CityController : Controller
     // POST: CityController/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<ActionResult> CreateAsync(CityVm model)
+    public async Task<ActionResult> Create(CityVm model)
     {
         if (ModelState.IsValid)
         {
@@ -63,14 +63,16 @@ public class CityController : Controller
     // GET: CityController/Edit/5
     public async Task<ActionResult> Edit(int id)
     {
-        var model = await _cityRepository.FirstOrDefaultAsync(id, x => x.State);
-        return View(_mapper.Map<CityVm>(model));
+        var city = await _cityRepository.FirstOrDefaultAsync(id, x => x.State);
+        var model = _mapper.Map<CityVm>(city);
+        model.StateDropdown = await _stateRepository.GetDropdown(city.StateId);
+        return View(model);
     }
 
     // POST: CityController/Edit/5
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<ActionResult> EditAsync(CityVm model)
+    public async Task<ActionResult> Edit(CityVm model)
     {
         if (ModelState.IsValid)
         {

@@ -12,7 +12,7 @@ public class CountryRepository : BaseRepository<Country>, ICountryRepository
     {
     }
 
-    public async Task<IEnumerable<SelectListItem>> GetDropdown(int? selected = 0)
+    public async Task<IEnumerable<SelectListItem>> GetDropdown(long? selected = 0)
     {
         var date = await GetAllAsync();
         return date.Select(x => new SelectListItem
