@@ -11,10 +11,4 @@
     <ProjectReference Include="..\Tactsoft.SharedKernel\Tactsoft.SharedKernel.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\Entities\" />
-    <Folder Include="Repositories\Entities\" />
-    <Folder Include="ViewModels\VmEntities\" />
-  </ItemGroup>
-
 </Project>

@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Serilog;
 using Tactsoft.Application;
 using Tactsoft.Infrastructure;
 using Tactsoft.SharedKernel.Core.EmailService;

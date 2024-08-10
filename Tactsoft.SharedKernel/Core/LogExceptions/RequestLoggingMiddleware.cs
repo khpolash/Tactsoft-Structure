@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Serilog;
 
 namespace Tactsoft.SharedKernel.Core.LogExceptions;
 public class RequestResponseLoggingMiddleware

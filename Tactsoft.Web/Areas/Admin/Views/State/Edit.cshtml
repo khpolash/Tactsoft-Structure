@@ -1,0 +1,58 @@
+﻿@model Tactsoft.Application.ViewModels.VmEntities.StateVm
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Enroll State Form</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Enroll State Form</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <!-- Entry Form Start -->
+    <div class="container-fluid">
+        <div class="card" style="">
+            <div class="border-bottom px-3 py-2 rounded-top">
+                <div class="d-flex justify-content-between">
+                    <h6>Enroll State</h6>
+                    <a asp-action="Create" class="btn btn-sm btn-default">Create New</a>
+                </div>
+            </div>
+            <form asp-action="Create">
+                <div class="card-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" class="form-control" />
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CountryId" class="control-label"></label>
+                        <select asp-for="CountryId" asp-items="Model.CountryDropdown" class="form-control">
+                            <option>Select Country</option>
+                        </select>
+                        <span asp-validation-for="CountryId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="border-top px-3 py-2 d-flex justify-content-between">
+                    <a asp-action="Index">Back to List</a>
+                    <input type="submit" value="Create" class="btn btn-primary btn-sm" />
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
