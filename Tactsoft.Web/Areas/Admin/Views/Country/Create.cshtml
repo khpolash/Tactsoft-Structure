@@ -4,37 +4,61 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>CountryVm</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Enroll Country Form</h1>
             </div>
-            <div class="form-group">
-                <label asp-for="Code" class="control-label"></label>
-                <input asp-for="Code" class="form-control" />
-                <span asp-validation-for="Code" class="text-danger"></span>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Enroll Country Form</li>
+                </ol>
             </div>
-            <div class="form-group">
-                <label asp-for="CapitalCity" class="control-label"></label>
-                <input asp-for="CapitalCity" class="form-control" />
-                <span asp-validation-for="CapitalCity" class="text-danger"></span>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <!-- Entry Form Start -->
+    <div class="container-fluid">
+        <div class="card" style="">
+            <div class="border-bottom px-3 py-2 rounded-top">
+                <div class="d-flex justify-content-between">
+                    <h6>Enroll Country</h6>
+                    <a asp-action="Create" class="btn btn-info btn-sm">Create New</a>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+
+            <form  asp-antiforgery="true" asp-area="Admin" asp-action="Create" asp-controller="Country"  method="post" enctype="multipart/form-data">
+                <div class="card-body">
+                    <div class="row">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" class="form-control" />
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Code" class="control-label"></label>
+                            <input asp-for="Code" class="form-control" />
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="CapitalCity" class="control-label"></label>
+                            <input asp-for="CapitalCity" class="form-control" />
+                            <span asp-validation-for="CapitalCity" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top px-3 py-2 d-flex justify-content-between">
+                    <a asp-action="Index">Back to List</a>
+                    <input type="submit" value="Create" class="btn btn-primary btn-sm" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+</section>
