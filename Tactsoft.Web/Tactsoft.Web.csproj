@@ -33,7 +33,6 @@
 
 	<ItemGroup>
 		<None Include="Areas\Admin\Views\CascadingSearch\Index.cshtml" />
-		<None Include="Areas\Admin\Views\Student\Index1.cshtml" />
 		<None Include="Areas\Admin\Views\Home\Index.cshtml" />
 		<None Include="Areas\Admin\Views\Home\Privacy.cshtml" />
 		<None Include="Areas\Admin\Views\MasterDetails\Index.cshtml" />
